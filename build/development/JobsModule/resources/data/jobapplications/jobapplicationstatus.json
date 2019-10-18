@@ -1,0 +1,24 @@
+
+{
+    "data": [
+     {
+        "appstatus_id":"1",
+        "name": "Application Approved"
+      },{
+        "appstatus_idid":"2",
+          "name": "Job Offered "
+      },{
+        "appstatus_idid":"3",
+           "name": "Application Drafted"
+      },{
+        "appstatus_id":"4",
+        "name": "Application Rejected"
+      },{
+        "appstatus_id":"5",
+        "name": "Offer Rejected"
+      },{
+        "appstatus_id":"6",
+        "name": "Candidate joined"
+      }           
+    ]
+  }

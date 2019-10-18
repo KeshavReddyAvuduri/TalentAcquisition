@@ -1,0 +1,8 @@
+{
+	"filterbyLocation":[
+		{ "name": "All"},
+	    { "name": "Bangalore"},
+	    { "name": "Hyderabad"},
+	    { "name": "US"}
+	]
+}

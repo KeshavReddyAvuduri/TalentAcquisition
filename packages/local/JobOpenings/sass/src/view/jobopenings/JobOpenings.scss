@@ -1,0 +1,136 @@
+.ddo-jobopenings-grid {
+    position: fixed;
+}
+.ddo-dashboard-grid .x-panel-header-default {
+	background-color: #000;	
+	border-color: #000;
+}
+.jobopening-cls .x-dataview-item {
+	width:48%;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+    margin: 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: -webkit-all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -moz-transition: -moz-all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -o-transition: -o-all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.jobopening-cls .ddo-jobopening-item {
+    width: 100% !important;
+	display: table;
+	padding: 15px;
+	background: #fff;	
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+.status-combo-cls {
+    float: right;
+}
+.arrow-cls{
+	vertical-align: top;
+}
+
+.status-div-cls{
+	padding: 15px;
+}
+.action-cls{
+	display:none;
+}
+select.select-cls {
+    border: none !important;
+    background: transparent;
+}
+.title-cls{
+    font-size: 16px;
+    font-weight: 500;
+}
+.creator-cls{
+    font-size: 16px;
+    color: #919191;
+}
+.title-div-cls{
+    padding-bottom: 8px;
+}
+.desc-cls{
+    padding-bottom: 18px;
+    padding-top: 18px;
+    font-size: 14px;
+}
+.loc-exp{
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+.skill-cls{
+    font-size: 14px;
+}
+.positions-cls{
+    float: right;
+    background: #FFCB69;
+    padding: 3px 6px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 12px;
+}
+.act-showcls{
+    position: absolute;
+    background: #fff;
+    display:block;
+    li {
+        list-style: none;
+    }
+    ul {
+        margin: 8px;
+        padding: 0px;
+    }
+}
+.act-removecls{
+    display: none;
+}
+.act-cls{
+    float: right;
+}
+.rec-assigncls {
+    float: left;
+}
+.checkImg {
+    background-image: url(/resources/images/Check-box.svg);
+    background-repeat: no-repeat;
+    width: 12px !important;
+    height: 14px !important;
+    vertical-align: bottom;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.jobback-btn-cls {
+    left: 0 !important;
+    background-color: #000000 !important;
+}
+
+.backlabel-cls {
+    left: 45px !important;
+        color: #818181;
+    font-size: 15px;
+}
+
+.titlelabel-cls {
+    left: 351px !important;
+    color: #818181;
+    font-size: 15px;
+}
+
+.upload-cls {
+    background: url(./images/icons/round_delete.png);
+}

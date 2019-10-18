@@ -1,0 +1,64 @@
+.karmaform-cancel-btn {
+    background-color: #000 !important;
+    border: none !important;
+    border-radius: 0px !important;
+    padding: 10px;
+    width: 30%;
+    position: relative;
+    left: 18% !important;
+
+    .x-btn-inner-default-toolbar-small{
+        color:#fff;
+    }
+}
+
+.karmaform-save-btn {
+    border: none !important;
+    background-color: #fcba1a !important;
+    border-radius: 0px !important;
+    width: 30%;
+    padding: 10px;
+    position: relative;
+    left: 50% !important;
+
+    .x-btn-inner-default-toolbar-small{
+        color:#fff;
+    }
+}
+
+.rule-name-cls {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    width: 80%;
+    padding: 5px;
+    position: relative;
+    margin-left: 45px;
+}
+
+.rule-window-cls {
+        text-align: center;
+        border: none !important;
+        background:#000 !important;
+        border-radius: 8px;
+}
+
+
+.rule-name-cls .x-form-text-default {
+    color: #000000;
+    padding: 0px 9px 4px;
+    background-color: #fff;
+    font: normal 14px/23px Open Sans;
+    min-height: 32px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 8px;
+}
+.rule-name-cls .x-form-trigger-wrap-default{
+    border-width: 0px !important;
+}
+
+
+
+.rule-window-cls .x-window-header-default{
+    background-color: #000 !important;
+    border: 0px solid #000 !important;
+}
+

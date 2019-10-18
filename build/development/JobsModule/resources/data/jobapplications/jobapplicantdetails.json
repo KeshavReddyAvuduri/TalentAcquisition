@@ -1,0 +1,17 @@
+{
+    "data": [
+        {
+            "ddo_jobapplication_id":"1",
+            "title": "UI Development",
+            "firstName":"Padmini",
+            "lastName":"Maddur",
+            "experience":2,
+            "ddo_joblocation_id":1,
+            "location_name":"Hyderabad",
+            "skill_name":"Java",
+            "education":"Btech/B.E - Computers",
+            "mobile":"9789656432",
+            "email_id":"mp@gmail.com"
+        }
+    ]
+}

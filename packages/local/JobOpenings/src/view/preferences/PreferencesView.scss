@@ -1,0 +1,93 @@
+.wallet-toolbar-cls{
+    background:transparent;
+    text-align: center;
+    left:0px !important;
+    padding: 10px 0px 10px 10px;
+    .x-box-inner{
+       border-top: 1px solid #EBEBEB;
+    }
+}
+
+.wallet-toolbar-cls .x-box-inner {
+    border-top: 0px solid #ebebeb !important;
+}
+
+.karmalist-cls {
+.x-column-header {
+    border-right: 0px !important;
+    color: #fff;
+    outline: 0;
+    background-color: #000;
+}
+.x-grid-header-ct {
+    background-color: #000 !important;
+}
+.x-grid-cell {
+    position: relative;
+    padding: 3px;
+}
+.x-column-header-over {
+    color: #FFF !important;
+    background-color: #000 !important;
+    border: none;
+}
+.x-column-header .x-column-header-open {
+    background-color: #000 !important;
+}
+.x-column-header-trigger {
+    background: none;
+    background-color: #000 !important;
+}
+.x-column-header-align-left {
+    text-align: center !important;
+}
+.x-grid-item-focused {
+    .x-grid-cell-inner:before {
+        border: none !important;
+    }
+}
+.x-grid-row .x-grid-cell {
+    border-bottom: none !important;
+    border-top: none !important;
+    border-right: 1px solid rgba(115, 109, 109, 0.09);
+}
+.x-grid-with-row-lines .x-grid-item {
+    border-width: 0px !important;
+}
+.x-grid-dirty-cell > .x-grid-cell-inner:after {
+    content: "" !important
+}
+}
+
+.rule-tb-cls.x-toolbar-default {
+    padding: 13px 0 6px 8px;
+    border-style: none;
+    border-width: 0px;
+    background-image: none;
+    height: 55px;
+    background-color: transparent;
+}
+
+.rule-add-btn {
+    &.x-btn-default-toolbar-small {
+        @include border-radius(6px !important);
+        background-color: #000 !important;
+        border-color: #000 !important;
+        width: 110px;
+    }
+    .x-btn-inner-default-toolbar-small {
+        font-size: 12px !important;
+        color: #f0f0f0;
+    }
+}
+.preferenceslist{
+    border: 1px solid #f5f4f4;
+    padding: 11px 5px 5px 5px;
+    cursor: pointer;
+    height: 40px;
+    text-align: center;
+}
+.preferenceslist.x-item-selected {
+    background-color: black;
+    color: white;
+}

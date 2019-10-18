@@ -1,0 +1,8 @@
+{
+	"filterbyDate":[
+		{ "name": "All"},
+	    { "name": "Past 24 HR"},
+	    { "name": "Past Week"},
+	    { "name": "Custom Range"}
+	]
+}

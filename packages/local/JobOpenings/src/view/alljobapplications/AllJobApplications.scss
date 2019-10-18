@@ -1,0 +1,71 @@
+
+.upload-btn.x-btn-default-small{
+    background-color: #0277a3 !important;
+    border-color: #0277a3 !important;
+    border-radius: 5px !important;
+}
+.upload-btn{
+    border: none;
+}
+.ddo-filter-window .x-toolbar-default{
+    border-width: 0px !important;
+}
+
+.requestCombo-cls .x-form-text-field-body-default {
+    border: 1px solid #d2cbcb;
+    border-radius: 4px !important;
+}
+.requestCombo-cls .x-form-item-label .x-form-item-label-defaultx-unselectable {
+    width: 82px;
+}
+.requestCombo-cls {
+    .x-form-text-default, .x-form-empty-field {
+        text-align: center;
+    }
+} 
+.selectjob-combo .x-form-item-label-inner{
+    text-align: left;
+}
+.filter-submit-btn .x-btn-inner-default-toolbar-small {
+    color:#ffffff !important;
+}
+.create-new-btn-cls.x-btn-default-small { 
+    background-color: #31a950 !important;
+    border-color: #31a950 !important;
+    margin: 0px 0 0 15px;
+    height: 35px;
+    border-radius: 4px !important;
+}
+.alljobapplicationsexceltemp-btn-cls.x-btn-default-small {
+    background-color: #585858 !important;
+    border-color: #585858 !important;
+    border-radius: 4px !important;
+}
+.karmascore-search-field {
+    margin-left: 8px !important;
+}
+.searchFields{
+    .x-form-text-default{
+        padding-left:17px !important;
+    }
+}
+
+ .job-search-icon{
+    margin-left: 5px !important;       
+    margin-top: -8px !important;
+}
+.karmascore-search-icon-field.x-btn-default-small{
+    font-family: 'WtcFontResource' !important;
+   font-size: 30px;
+   padding: 5px 0 0px 10px;
+}
+.karmascore-search-icon-field  {
+    z-index: 1;
+    cursor: initial;
+    top: 7px !important;
+    left:2% !important;
+    width: 21px !important;
+    height: 21px !important;
+    border-color: #fff !important;
+    background-color: #fff !important;
+}

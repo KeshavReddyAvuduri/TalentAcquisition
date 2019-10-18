@@ -1,0 +1,11 @@
+{
+    "data":[{
+            "name":"Friend"
+        },{
+            "name":"Ex.Colleague"
+        },{
+            "name":"Relative"
+        },{
+            "name":"Others"
+        }]
+}

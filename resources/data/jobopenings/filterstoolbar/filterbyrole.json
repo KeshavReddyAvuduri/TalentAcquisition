@@ -1,0 +1,13 @@
+{
+	"filterbyRole":[
+		{ "name": "All"},
+	    { "name": "Backend Developer"},
+	    { "name": "Growth Catalist"},
+	    { "name": "Growth Hacker"},
+	    { "name": "Java Developer"},
+	    { "name": "Intern"},
+	    { "name": "Technical Lead"},
+	    { "name": "UI Developer"},
+	    {"name": "WordPress Developer"}
+	]
+}
