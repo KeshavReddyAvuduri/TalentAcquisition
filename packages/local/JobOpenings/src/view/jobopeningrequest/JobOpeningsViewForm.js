@@ -12,7 +12,7 @@ Ext.define('JobOpenings.view.jobopeningrequest.JobOpeningsViewForm', {
             this.up('jobopeningsrequestview').getViewModel().getStore('interviewrsStore').load();
         }
    },
-   height:650,
+   height:500,
    scrollable:true,
     dockedItems: [{
         xtype: 'toolbar',
@@ -21,7 +21,7 @@ Ext.define('JobOpenings.view.jobopeningrequest.JobOpeningsViewForm', {
         items: [{
             xtype: 'button',
             scale: 'medium',
-            iconCls: 'x-fa fa-long-arrow-alt-left',
+            iconCls: 'x-fa fa-arrow-left',
             cls: 'jobback-btn-cls',
             style: {
                 border: 0

@@ -9,7 +9,7 @@ Ext.define('JobOpenings.view.jobopeningrequest.filtertoolbar.JobOpeningRequestFi
 	],
 	viewModel: 'filterviewmodel',
 	controller: 'jobopeningsfiltercontroller',
-
+	cls: 'filter-window-color',
 	layout:'column',
 	items: [{
 		columnWidth: 0.5,

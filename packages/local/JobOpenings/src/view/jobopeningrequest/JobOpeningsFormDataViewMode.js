@@ -3,7 +3,7 @@ Ext.define('JobOpenings.view.jobopeningrequest.JobOpeningsFormDataViewMode', {
     xtype: 'jobOpeningsFormDataViewMode',
     cls: 'form-cls',
     reference: 'jobOpeningsFormDataViewModeRef',
-    height:650,
+    height:500,
     scrollable:true,
     dockedItems: [{
         xtype: 'toolbar',
@@ -12,7 +12,7 @@ Ext.define('JobOpenings.view.jobopeningrequest.JobOpeningsFormDataViewMode', {
         items: [{
             xtype: 'button',
             scale: 'medium',
-            iconCls: 'goalsbackbtn-cls',
+            iconCls: 'x-fa fa-arrow-left',
             cls: 'jobback-btn-cls',
             style: {
                 border: 0

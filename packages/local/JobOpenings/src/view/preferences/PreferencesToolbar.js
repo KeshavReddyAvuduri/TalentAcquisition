@@ -7,7 +7,7 @@ Ext.define('JobOpenings.view.preferences.PreferencesToolbar', {
     }, {
         xtype: 'button',
         text: 'Add New',
-        iconCls: 'rule-plus',
+        iconCls: 'x-fa fa-plus',
         margin: 0,
         cls: 'rule-add-btn',
         listeners: {

@@ -13,7 +13,7 @@ Ext.define('JobOpenings.view.alljobapplications.AllJobApplicationsExcelFileuploa
 	],
 	viewModel: 'alljobapplicationsviewmodel',
 	controller: 'alljobapplicationscontroller',
-
+	cls: 'filter-window-color',
 			items: [{
 				xtype: 'combobox',
 				reference: 'selectjobopeningref',

@@ -9,7 +9,7 @@ Ext.define('JobOpenings.view.preferences.PreferencesView', {
         'JobOpenings.view.preferences.PreferencesToolbar'
     ],
     margin: 20,
-    cls: 'karmarule-cls',
+    cls: 'filter-window-color',
     viewModel: {
         type: 'preferencesgridmodel'
     },

@@ -114,12 +114,6 @@ select.select-cls {
     margin-right: 5px;
 }
 
-.titlelabel-cls {
-    left: 351px !important;
-    color: #818181;
-    font-size: 15px;
-}
-
 .upload-cls {
     background: url(./images/icons/round_delete.png);
 }
@@ -152,7 +146,7 @@ select.select-cls {
     }
 
     .x-form-text-field-body-default {
-         border: 0px solid #dedede !important;
+         border: 1px solid #dedede !important;
     }
 
     .x-panel-header-title-default > .x-title-text-default {
@@ -247,18 +241,18 @@ select.select-cls {
 
 /* filters sass */
 
-.create-new-btn-cls.x-btn-default-small { 
-    background-color: #31a950 !important;
-    border-color: #31a950 !important;
-    margin: 0px 0 0 15px;
-    height: 35px;
+// .create-new-btn-cls.x-btn-default-small { 
+//     background-color: #31a950 !important;
+//     border-color: #31a950 !important;
+//     margin: 0px 0 0 15px;
+//     height: 35px;
     
-}
-.create-new-btn-cls .x-btn-inner-default-toolbar-small {
-    color:white;
-    /*padding: 3px 30px 0px 0px;*/
-    text-align: center;
-}
+// }
+// .create-new-btn-cls .x-btn-inner-default-toolbar-small {
+//     color:white;
+//     /*padding: 3px 30px 0px 0px;*/
+//     text-align: center;
+// }
 /*.requestCombo-cls .x-form-trigger-default {
     border: 1px solid gray;
 }*/
@@ -291,7 +285,11 @@ select.select-cls {
         background: transparent;
     }
 }
-
+.job-header{
+    .x-panel-body-default{
+        background-color: #fff !important;
+    }
+}
 // .goalsbackbtn-cls {
 //     font-family: 'Awesome' !important;
 //     /*font-size: 30px;*/
@@ -423,8 +421,4 @@ select.select-cls {
     -o-border-radius: 4px;
     border-radius: 4px;
 }
-
-
-
-
 

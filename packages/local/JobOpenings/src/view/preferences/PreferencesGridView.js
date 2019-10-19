@@ -22,7 +22,7 @@ Ext.define('JobOpenings.view.preferences.PreferencesGridView', {
           xtype:'actioncolumn',
           align:'center',
           items:[{
-            iconCls: 'delete-plus',
+            iconCls: 'x-fa fa-trash',
             tooltip: 'Delete',
             handler: function(grid, rowIndex, colIndex) {
               var gridStore = grid.getStore('preferncesStore'),

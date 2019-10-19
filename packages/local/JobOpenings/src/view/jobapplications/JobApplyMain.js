@@ -14,7 +14,7 @@ Ext.define('JobOpenings.view.jobapplications.JobApplyMain',{
 	tools:[{
 		xtype: 'button',
 		scale: 'medium',
-		iconCls: 'goalsbackbtn-cls',
+		iconCls: 'x-fa fa-arrow-left',
 		cls: 'jobback-btn-cls',
 		style:{
 			border: 0

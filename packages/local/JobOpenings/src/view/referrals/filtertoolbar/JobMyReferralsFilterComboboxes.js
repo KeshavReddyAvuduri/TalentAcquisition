@@ -10,6 +10,7 @@ Ext.define('JobOpenings.view.referrals.filtertoolbar.JobMyReferralsFilterCombobo
 	viewModel: 'filterviewmodel',
 	controller: 'jobmyreferralsfiltercontroller',
 	layout:'column',
+	cls: 'filter-window-color',
 	items: [{
 		columnWidth: 0.5,
 		items: [{

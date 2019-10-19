@@ -19,6 +19,7 @@ Ext.define('JobOpenings.view.jobopeningrequest.filtertoolbar.JobOpeningsFilterVi
 			xtype: 'button',
 			width: 6,
 			cls: 'karmascore-search-icon-field job-search-icon',
+			iconCls: 'x-fa fa-search',
 			height: 6,
 			padding: '-8 11 14 12'
 		}, {

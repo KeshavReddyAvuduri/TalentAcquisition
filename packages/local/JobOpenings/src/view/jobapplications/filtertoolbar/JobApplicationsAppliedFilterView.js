@@ -20,7 +20,7 @@ Ext.define('JobOpenings.view.jobapplications.filtertoolbar.JobApplicationsApplie
         items: [{
             xtype: 'button',
             scale: 'medium',
-            iconCls: 'goalsbackbtn-cls',
+            iconCls: 'x-fa fa-arrow-left',
             cls: 'jobback-btn-cls',
             style: {
                 border: 0
@@ -44,6 +44,7 @@ Ext.define('JobOpenings.view.jobapplications.filtertoolbar.JobApplicationsApplie
         xtype: 'button',
         width: 6,
         cls: 'karmascore-search-icon-field job-search-icon',
+        iconCls: 'x-fa fa-search',
         height: 6,
         padding: '-8 11 14 12'
     }, {
@@ -215,9 +216,9 @@ Ext.define('JobOpenings.view.jobapplications.filtertoolbar.JobApplicationsApplie
         height: 35,
         textAlign: 'center',
         cls: 'create-new-btn-cls',
-        bind: {
-            hidden: '{showJobAppCreateBtn}' //defind in MainView model
-        },
+        // bind: {
+        //     hidden: '{showJobAppCreateBtn}' //defind in MainView model
+        // },
         listeners: {
             click: function (btn) {/* on new application create selected*/
                 var recTitle = window.sessionStorage.newApplicationHead;

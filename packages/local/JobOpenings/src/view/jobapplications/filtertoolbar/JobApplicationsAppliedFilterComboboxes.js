@@ -11,6 +11,7 @@ Ext.define('JobOpenings.view.jobapplications.filtertoolbar.JobApplicationsApplie
 	controller: 'jobapplicationsappliedfiltercontroller',
 	reference:'jaFiltersForm',
 	layout: 'column',
+	cls: 'filter-window-color',
 	items: [{
 		//xtype: 'toolbar',
 		columnWidth: 0.5,
