@@ -3,6 +3,8 @@ Ext.define('JobOpenings.view.jobopeningrequest.JobOpeningsFormDataViewMode', {
     xtype: 'jobOpeningsFormDataViewMode',
     cls: 'form-cls',
     reference: 'jobOpeningsFormDataViewModeRef',
+    height:650,
+    scrollable:true,
     dockedItems: [{
         xtype: 'toolbar',
         cls: 'tooltip-cls',

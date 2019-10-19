@@ -12,6 +12,8 @@ Ext.define('JobOpenings.view.jobopeningrequest.JobOpeningsViewForm', {
             this.up('jobopeningsrequestview').getViewModel().getStore('interviewrsStore').load();
         }
    },
+   height:650,
+   scrollable:true,
     dockedItems: [{
         xtype: 'toolbar',
         cls: 'tooltip-cls',

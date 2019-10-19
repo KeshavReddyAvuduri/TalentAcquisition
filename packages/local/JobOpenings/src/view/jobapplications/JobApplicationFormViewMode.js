@@ -9,6 +9,8 @@ Ext.define('JobOpenings.view.jobapplications.JobApplicationFormViewMode',{
 		padding: 5,
 		labelStyle: 'font-size:16px;'
 	},
+	height:600,
+	scrollable:true,
 	reference: 'jobApplicationFormViewModeRef',
 	layout: {
 		type: 'vbox',
