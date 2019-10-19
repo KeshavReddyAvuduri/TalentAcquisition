@@ -6,6 +6,7 @@ Ext.define('JobsModule.view.main.MainController', {
 	extend: 'Ext.app.ViewController',
 
 	alias: 'controller.main',
+	mixins: ['JobsModule.view.main.Routes'],
 
 	onItemSelected: function (sender, record) {
 		Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
@@ -15,6 +16,9 @@ Ext.define('JobsModule.view.main.MainController', {
 		if (choice === 'yes') {
 			//
 		}
+	},
+	routes: {
+		':makeactivetab': 'makeActiveTab',
 	},
 	myfunction: function (keycloak) {
 		setTimeout(() => {
@@ -69,6 +73,19 @@ Ext.define('JobsModule.view.main.MainController', {
 
 					me.onLoginClick(window.keyCloak.tokenParsed);
 					Ext.ComponentQuery.query('preferencestypeslistView')[0].getViewModel().getStore('preferencestypelist').load();
+					if (location.hash == '#preferences') {
+						me.redirectTo(component.activeTab.itemId);
+					}
+					setTimeout(() => {
+						var preferencestypeliststore = Ext.ComponentQuery.query('preferencestypeslistView')[0].getViewModel().getStore('preferencestypelist');
+						var preferncesStore = Ext.ComponentQuery.query('preferencesview')[0].getViewModel().getStore('preferncesStore');
+						if (!preferencestypeliststore.isLoaded()) {
+							preferencestypeliststore.load();
+						}
+						if (!preferncesStore.isLoaded()) {
+							preferncesStore.load();
+						}
+					}, 1000);
 				}
 				masking.hide();
 			}).error(function () {
@@ -93,6 +110,12 @@ Ext.define('JobsModule.view.main.MainController', {
 									loginStore.add([responseText.data]);
 								}
 							}
+
+							if (location.hash == '#preferences') {
+								me.redirectTo(component.activeTab.itemId);
+							}
+							var activeItem = location.hash.replace("#", '');
+							me.getView().setActiveItem(activeItem);
 							Ext.ComponentQuery.query('preferencestypeslistView')[0].getViewModel().getStore('preferencestypelist').load();
 						}
 					})
@@ -104,42 +127,50 @@ Ext.define('JobsModule.view.main.MainController', {
 
 
 		masking.hide();
-
-		// this.myfunction(keycloak);
 	},
-	onTabChange:function(){
-		var store=Ext.ComponentQuery.query('preferencestypeslistView')[0].getViewModel().getStore('preferencestypelist').load();
-	if(!store.isLoaded()){
-		store.load();
-	}
+	onTabChange: function (tabname) {
+		location.href + tabname.activeTab.itemId;
+		var me = this;
+
+		this.redirectTo(tabname.activeTab.itemId);
+		var preferencestypeliststore = Ext.ComponentQuery.query('preferencestypeslistView')[0].getViewModel().getStore('preferencestypelist');
+		var preferncesStore = Ext.ComponentQuery.query('preferencesview')[0].getViewModel().getStore('preferncesStore');
+		if (!preferencestypeliststore.isLoaded()) {
+			preferencestypeliststore.load();
+		}
+		if (!preferncesStore.isLoaded()) {
+			preferncesStore.load();
+		}
+
 	},
 	onLogoutClick: function () {
 		var keycloak = KeycloakLoader.getKeycloak();
-		keycloak.logout(true);
-		// Ext.Ajax.request({
-		// 	url: Api.URL.logout.LOGOUT,
-		// 	method: "GET",
-		// 	params: {},
-		// 	success: function () {
-		// 		sessionStorage.removeItem('authentication');
-		// 		sessionStorage.removeItem('refreshToken');
-		// 		if (!keycloak) {
-		// 			KeycloakLoader.initialize();
-		// 			keycloak = KeycloakLoader.getKeycloak();
-		// 		}
-		// 		keycloak.logout(true);
-		// 		var me = this,
-		// 			loginStore = Ext.getStore("login")
-		// 		if (loginStore) {
-		// 			loginStore.removeAll();
-		// 		}
-		// 	},
-		// 	failure: function () {
-		// 		sessionStorage.removeItem('authentication');
-		// 		sessionStorage.removeItem('refreshToken');
-		// 		keycloak.logout(true);
-		// 	}
-		// })
+		this.redirectTo('');
+		var keycloak = KeycloakLoader.getKeycloak();
+		Ext.Ajax.request({
+			url: Api.URL.logout.LOGOUT,
+			method: "GET",
+			params: {},
+			success: function () {
+				sessionStorage.removeItem('authentication');
+				sessionStorage.removeItem('refreshToken');
+				if (!keycloak) {
+					KeycloakLoader.initialize();
+					keycloak = KeycloakLoader.getKeycloak();
+				}
+				keycloak.logout(true);
+				var me = this,
+					loginStore = Ext.getStore("login")
+				if (loginStore) {
+					loginStore.removeAll();
+				}
+			},
+			failure: function () {
+				sessionStorage.removeItem('authentication');
+				sessionStorage.removeItem('refreshToken');
+				keycloak.logout(true);
+			}
+		})
 
 
 	}

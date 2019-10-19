@@ -76,39 +76,43 @@ Ext.define('JobsModule.view.main.Main', {
     },
     listeners: {
         beforerender: 'checkForLogin',
-        tabchange:'onTabChange'
+        tabchange: 'onTabChange'
     },
-    
+
     tbar: ['->', {
         docked: 'right',
         xtype: 'button',
         text: 'LogOut',
         width: 100,
-        reference:'logoutbtn',
+        reference: 'logoutbtn',
         margin: '10 20 0 10',
-        handler:'onLogoutClick'
+        handler: 'onLogoutClick'
     }],
 
     items: [{
         title: 'Preferences',
+        itemId: 'preferences',
         iconCls: 'x-fa fa-user',
         items: [{
             xtype: 'preferencesview'
         }]
     }, {
         title: 'Job Openings',
+        itemId: 'job_openings',
         iconCls: 'x-fa fa-user',
         items: [{
             xtype: 'jobopeningsrequestview'
         }]
     }, {
         title: 'Job Applications',
+        itemId: 'job_application',
         iconCls: 'x-fa fa-user',
         items: [{
             xtype: 'jobapplications'
         }]
     }, {
         title: 'All Job Applications',
+        itemId: 'all_job_applications',
         iconCls: 'x-fa fa-user',
 
         items: [{
@@ -116,18 +120,21 @@ Ext.define('JobsModule.view.main.Main', {
         }]
     }, {
         title: 'Referrals',
+        itemId: 'referrals',
         iconCls: 'x-fa fa-user',
         items: [{
             xtype: 'jobopeningsreferralsview'
         }]
     }, {
         title: 'Interview Request',
+        itemId: 'intreview_request',
         iconCls: 'x-fa fa-user',
         items: [{
             xtype: 'interviewrequest'
         }]
     }, {
         title: 'Application Enquiry',
+        itemId: 'application_enquiry',
         iconCls: 'x-fa fa-user',
         items: [{
             xtype: 'applicationenquiry'
