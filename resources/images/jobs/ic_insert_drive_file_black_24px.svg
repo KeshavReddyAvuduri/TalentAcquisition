@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-706 224 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="ic_insert_drive_file_black_24px" transform="translate(-706 224)">
+    <path id="Path_127" data-name="Path 127" d="M5.333,2A1.332,1.332,0,0,0,4.007,3.333L4,14a1.332,1.332,0,0,0,1.327,1.333h8.007A1.337,1.337,0,0,0,14.667,14V6l-4-4ZM10,6.667V3l3.667,3.667Z" transform="translate(-1.333 -0.667)"/>
+    <path id="Path_128" data-name="Path 128" class="cls-1" d="M0,0H16V16H0Z"/>
+  </g>
+</svg>

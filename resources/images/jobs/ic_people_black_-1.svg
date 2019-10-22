@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1027 87 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #ffcb69;
+      }
+    </style>
+  </defs>
+  <g id="ic_people_black_24px" transform="translate(-1027 87)">
+    <path id="Path_69" data-name="Path 69" class="cls-1" d="M0,0H16V16H0Z"/>
+    <path id="Path_70" data-name="Path 70" class="cls-2" d="M11,9A2,2,0,1,0,9,7,1.992,1.992,0,0,0,11,9ZM5.667,9a2,2,0,1,0-2-2A1.992,1.992,0,0,0,5.667,9Zm0,1.333c-1.553,0-4.667.78-4.667,2.333v1.667h9.333V12.667C10.333,11.113,7.22,10.333,5.667,10.333Zm5.333,0c-.193,0-.413.013-.647.033a2.813,2.813,0,0,1,1.313,2.3v1.667h4V12.667C15.667,11.113,12.553,10.333,11,10.333Z" transform="translate(-0.333 -1.667)"/>
+  </g>
+</svg>

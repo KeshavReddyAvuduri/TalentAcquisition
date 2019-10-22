@@ -25,6 +25,7 @@ Ext.define('JobOpenings.view.referrals.filtertoolbar.JobMyReferralsFilter', {
             scale: 'medium',
             iconCls: 'goalsbackbtn-cls',
             cls: 'jobback-btn-cls',
+            iconCls: 'x-fa fa-arrow-left',
             style: {
                 border: 0
             },

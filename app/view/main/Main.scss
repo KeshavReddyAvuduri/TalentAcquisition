@@ -4,92 +4,18 @@
 @import "compass";
 @import "compass/css3";
 @font-face {
-    font-family: 'Aileron';
-    src: url('/resources/fonts/aileron/Aileron-Regular.otf');
-    font-weight: normal;
+    font-family: 'Roboto-Regular';
+    src: url("/resources/fonts/roboto/Roboto-Regular.ttf");
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Aileron';
-    src: url('/resources/fonts/aileron/Aileron-UltraLight.otf');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Aileron';
-    src: url('/resources/fonts/aileron/Aileron-Black.otf');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Aileron';
-    src: url('/resources/fonts/aileron/Aileron-Heavy.otf');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Aileron';
-    src: url('/resources/fonts/aileron/Aileron-Bold.otf');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Aileron';
-    src: url('/resources/fonts/aileron/Aileron-SemiBold.otf');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Aileron';
-    src: url('/resources/fonts/aileron/Aileron-Regular.otf');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Aileron';
-    src: url('/resources/fonts/aileron/Aileron-Light.otf');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Aileron';
-    src: url('/resources/fonts/aileron/Aileron-Thin.otf');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Aileron';
-    src: url('/resources/fonts/aileron/Aileron-UltraLight.otf');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'WtcFontResource';
-    src: url('/resources/fonts/ddo/WTC_DDO.ttf');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Awesome';
-    src: url('/resources/fonts/FontAwesome/Goals_DDO.ttf');
-    font-weight: 100;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Roboto-Regular';
+//     src: url("/resources/fonts/roboto/Roboto-Bold.ttf");
+//     font-style: normal;
+// }
 
 .x-body *{
-    font-family: 'Aileron', 'Open Sans';
-    font-weight: 400;
+    font-family: 'Roboto-Regular';
 }
 .applicationenquiry-backcolor{
     background-color: #fff !important;
@@ -1277,6 +1203,8 @@ text-align: center;
     display:block;
     padding: 5px 10px;
     line-height: 1.3;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
     li {
         list-style: none;
         font-size:11px;
@@ -1403,4 +1331,19 @@ text-align: center;
     padding-left: 5px;
     font-weight: normal;
     font-size: 17pt;
+}
+.itemSelecCls.x-view-item-focused {
+    outline: none !important;
+}
+.jobOpenFormView.x-view-item-focused {
+    outline: none !important;
+}
+.jobdataviewcls.x-view-item-focused{
+    outline: none !important;
+}
+.jobdataviewcls .x-dataview-item.x-view-item-focused{
+    outline: none !important;
+}
+.my-referral-class-all-views.x-view-item-focused{
+    outline: none !important;
 }

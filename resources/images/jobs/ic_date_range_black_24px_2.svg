@@ -1,0 +1,15 @@
+<svg id="ic_date_range_black_24px_2_" data-name="ic_date_range_black_24px (2)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0078be;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <path id="Path_119" data-name="Path 119" class="cls-1" d="M7,8H5.667V9.333H7ZM9.667,8H8.333V9.333H9.667Zm2.667,0H11V9.333h1.333Zm1.333-4.667H13V2H11.667V3.333H6.333V2H5V3.333H4.333A1.327,1.327,0,0,0,3.007,4.667L3,14a1.333,1.333,0,0,0,1.333,1.333h9.333A1.337,1.337,0,0,0,15,14V4.667A1.337,1.337,0,0,0,13.667,3.333Zm0,10.667H4.333V6.667h9.333Z" transform="translate(-1 -0.667)"/>
+  <path id="Path_120" data-name="Path 120" class="cls-2" d="M0,0H16V16H0Z"/>
+</svg>

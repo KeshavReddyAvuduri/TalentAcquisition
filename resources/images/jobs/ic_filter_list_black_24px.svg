@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-333 -100 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="ic_filter_list_black_24px" transform="translate(-333 -100)">
+    <path id="Path_95" data-name="Path 95" d="M10,18h4V16H10ZM3,6V8H21V6Zm3,7H18V11H6Z"/>
+    <path id="Path_96" data-name="Path 96" class="cls-1" d="M0,0H24V24H0Z"/>
+  </g>
+</svg>
