@@ -10,8 +10,8 @@ Ext.define('JobOpenings.view.referrals.ReferralsViewmodel', {
             autoLoad: false,
             proxy: {
                 type: 'ajax',
-              //  url: Api.URL.joblocation.READ,
-              url:'jobapplication',
+               url: Api.URL.joblocation.READ,
+            //   url:'jobapplication',
                 reader: {
                     type: 'json',
                     rootProperty: 'data'

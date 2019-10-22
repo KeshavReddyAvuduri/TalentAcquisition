@@ -85,7 +85,7 @@ Ext.define('JobsModule.view.main.MainController', {
 						if (!preferncesStore.isLoaded()) {
 							preferncesStore.load();
 						}
-					}, 1000);
+					}, 500);
 				}
 				masking.hide();
 			}).error(function () {
@@ -97,7 +97,7 @@ Ext.define('JobsModule.view.main.MainController', {
 				if (authenticated == true) {
 					Ext.Ajax.request({
 
-						url: Api.URL.userDetails.READ,
+						url: API.URL.userDetails.READ,
 						method: "GET",
 						params: {
 							email: window.keyCloak.tokenParsed.email
@@ -148,7 +148,7 @@ Ext.define('JobsModule.view.main.MainController', {
 		this.redirectTo('');
 		var keycloak = KeycloakLoader.getKeycloak();
 		Ext.Ajax.request({
-			url: Api.URL.logout.LOGOUT,
+			url: API.URL.logout.LOGOUT,
 			method: "GET",
 			params: {},
 			success: function () {
@@ -176,3 +176,5 @@ Ext.define('JobsModule.view.main.MainController', {
 	}
 
 });
+
+// chennakesavareddy.avuduri@walkingtree.tech

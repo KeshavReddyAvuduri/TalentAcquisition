@@ -1,14 +1,14 @@
-Ext.define('JobsModule.store.jobopenings.JobOpenings', {
+Ext.define('JobOpenings.store.jobopenings.JobOpenings', {
     extend: 'Ext.data.Store',
     alias: 'store.jobopenings',
 
     //storeId: 'jobopenings',
 
     requires: [
-        'JobsModule.model.jobopenings.JobOpenings'
+        'JobOpenings.model.jobopenings.JobOpenings'
     ],
 
-    model: 'JobsModule.model.jobopenings.JobOpenings',
+    model: 'JobOpenings.model.jobopenings.JobOpenings',
 
     autoLoad: false,
 

@@ -4,10 +4,10 @@
  * @singleton
  */
 
-Ext.define('JobsModule.util.Api', {
+Ext.define('JobOpenings.util.Api', {
     singleton: true,
 
-    alternateClassName: ['API'],
+    alternateClassName: ['Api'],
 
     URL: (function () {
         

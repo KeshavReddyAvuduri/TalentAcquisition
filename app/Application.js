@@ -15,16 +15,14 @@ Ext.define('JobsModule.Application', {
         }
     },
     requires : [
-        'JobsModule.overrides.data.Connection'
+        'JobOpenings.overrides.data.Connection'
     ],
-    stores:['JobsModule.store.jobopenings.JobopeningsActions'],
+    stores:[
+        'JobsModule.store.jobopenings.JobopeningsActions',
+        'JobsModule.store.Login',
+        'JobsModule.store.jobopenings.JobRecruiter',
+    ],
     onAppUpdate: function () {
-        Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
-            function (choice) {
-                if (choice === 'yes') {
-                    window.location.reload();
-                }
-            }
-        );
+     
     }
 });

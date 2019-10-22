@@ -1,7 +1,7 @@
 Ext.define('JobOpenings.view.preferences.PreferencesGridView', {
     extend: 'Ext.grid.Panel',
     alias: 'widget.preferencesgrid',
-    plugins: 'gridfilters',
+    // plugins: 'gridfilters',
     cls: 'karmalist-cls',
     style:'border:1px solid #efe8e8; background: black;',
     bind:{

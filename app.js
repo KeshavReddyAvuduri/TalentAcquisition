@@ -11,7 +11,8 @@ Ext.application({
         // This will automatically load all classes in the JobsModule namespace
         // so that application classes do not need to require each other.
         'JobsModule.util.Api',
-        'JobsModule.*'
+        'JobsModule.*',
+        'JobOpenings.util.Api'
     ],
 
     // The name of the initial view to create.

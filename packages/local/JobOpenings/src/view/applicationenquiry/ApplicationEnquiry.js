@@ -16,7 +16,7 @@ Ext.define('JobOpenings.view.applicationenquiry.ApplicationEnquiry', {
     },
     margin: '10 0 0 10',
     reference: 'applicationenquiryreference',
-   
+    cls: 'applicationenquiry-backcolor',
     items:[{
         xtype:"applicationviewform"
     }]

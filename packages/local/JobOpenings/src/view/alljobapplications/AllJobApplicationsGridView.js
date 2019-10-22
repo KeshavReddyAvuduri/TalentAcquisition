@@ -3,7 +3,8 @@ Ext.define('JobOpenings.view.alljobapplications.AllJobApplicationsGridView', {
     xtype: 'alljobapplicationsgridview',
     reference: 'alljobapplicationsgridviewref',
     requires: ['JobOpenings.view.alljobapplications.AllJobApplicationsController',
-        'JobOpenings.view.alljobapplications.AllJobApplicationsToolbar'
+        'JobOpenings.view.alljobapplications.AllJobApplicationsToolbar',
+        'JobOpenings.view.alljobapplications.AllJobApplicationsViewModel'
     ],
     controller: 'alljobapplicationscontroller',
     viewModel: {

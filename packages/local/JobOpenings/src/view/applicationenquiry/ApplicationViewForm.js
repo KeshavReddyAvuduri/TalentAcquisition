@@ -6,6 +6,7 @@ Ext.define('JobOpenings.view.applicationenquiry.ApplicationViewForm', {
     reference: 'applicationform',
     margin: '20 0',
     title: 'Application Details',
+    requires:['JobOpenings.store.filtertoolbar.IdTypeCombo'],
     //cls:'appenq-title',
     //    dockedItems: [{
     //     xtype: 'toolbar',

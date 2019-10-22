@@ -3,7 +3,7 @@ Ext.define('JobOpenings.view.alljobapplications.AllJobApplicationsController', {
     alias: 'controller.alljobapplicationscontroller',
     requires: ['JobOpenings.view.alljobapplications.AllJobApplicationsUtil'],
     onGridRowClick: function (ele, record, item, index, e, eOpts) {
-        var mainView = Ext.ComponentQuery.query('[reference = alljobapplicationreference]')[0],
+        var mainView = Ext.ComponentQuery.query('alljobapplications')[0],
             form = Ext.ComponentQuery.query("alljobapplicationsformviewmode")[0],
             jobportalField = Ext.ComponentQuery.query('[reference = portalref]')[0];
         mainView.getLayout().setActiveItem(1);

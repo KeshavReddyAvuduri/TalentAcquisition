@@ -1,4 +1,4 @@
-Ext.define('JobsModule.overrides.data.Connection', {
+Ext.define('JobOpenings.overrides.data.Connection', {
     override: 'Ext.data.Connection',
     request: function(options) {
         if(options && options.url){

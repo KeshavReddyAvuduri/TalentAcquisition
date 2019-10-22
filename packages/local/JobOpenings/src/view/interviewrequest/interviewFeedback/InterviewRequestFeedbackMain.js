@@ -72,9 +72,9 @@ Ext.define('JobOpenings.view.interviewrequest.interviewrequest.InterviewRequestF
         items: [{
             xtype: 'dataview',
             cls: 'jobsdataviewcls',
-            // bind: {
-            //     store: '{jobapplicantStore}'
-            // },
+            bind: {
+                store: '{jobapplicantStore}'
+            },
             itemTpl: [
                 '<div class="jobsdiv-cls ddo-jobopening-item">',
                 '<div class="datadiv-cls">',

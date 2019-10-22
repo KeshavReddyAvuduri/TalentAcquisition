@@ -50,9 +50,9 @@ Ext.define('JobOpenings.view.jobopeningrequest.JobOpeningsViewForm', {
         defaults: {
             width: '70%',
             labelAlign: 'right',
-            labelWidth: 180,
+            labelWidth: 190,
             padding: 5,
-            labelStyle: 'font-size:16px;'
+            labelStyle: 'font-size:18px;'
         },
         items: [{
             xtype: 'hiddenfield',
@@ -143,7 +143,7 @@ Ext.define('JobOpenings.view.jobopeningrequest.JobOpeningsViewForm', {
                 xtype:'fieldcontainer',
                 fieldLabel:'Salary Range',
                 cls: 'fieldcontainer-cls',
-                labelStyle: 'font-size:16px;',
+                labelStyle: 'font-size:18px;',
                 labelAlign: 'right',
                 labelWidth:178,
                 layout:'hbox',
@@ -195,7 +195,7 @@ Ext.define('JobOpenings.view.jobopeningrequest.JobOpeningsViewForm', {
                 afterLabelTextTpl: '<sup><span class="ta-mandatory-field-cls">*</span></sup>',
                 msgTarget: 'side',
                 labelAlign: 'right',
-                labelStyle: 'font-size:16px;',
+                labelStyle: 'font-size:18px;',
                 items: [{
                     xtype: 'numberfield',
                     name: 'noofpositions',
@@ -224,7 +224,7 @@ Ext.define('JobOpenings.view.jobopeningrequest.JobOpeningsViewForm', {
                     maskRe: /[0-9\-\/]/,
                     allowBlank: false,
                     cls:['closuredatecls','closuredatecls1'],
-                    labelStyle: 'font-size:15px;width:170px;padding-right:5px',
+                    labelStyle: 'font-size:18px;width:170px;padding-right:5px',
                     fieldLabel: 'Expected Closure Date',
                     afterLabelTextTpl: '<sup><span class="ta-mandatory-field-cls">*</span></sup>',
                     minValue: new Date(),
@@ -274,7 +274,7 @@ Ext.define('JobOpenings.view.jobopeningrequest.JobOpeningsViewForm', {
                     checked:false,
                     cls:['workprioritycls','workprioritycls1'],
                     labelAlign: 'right',
-                    labelStyle: 'font-size:16px;',
+                    labelStyle: 'font-size:18px;',
                     reference:'jobworkcheckboxref'
                 }]
             }]
@@ -290,7 +290,7 @@ Ext.define('JobOpenings.view.jobopeningrequest.JobOpeningsViewForm', {
                 msgTarget: 'side',
                 labelAlign: 'right',
                 labelWidth: 178,
-                labelStyle: 'font-size:16px;',
+                labelStyle: 'font-size:18px;',
                 items: [{
                     xtype: 'numberfield',
                     emptyText: 'Minimum',

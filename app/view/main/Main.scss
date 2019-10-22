@@ -1,8 +1,98 @@
 // /*
 //  * This file contains styling for the Main view.
 //  */
+@import "compass";
+@import "compass/css3";
+@font-face {
+    font-family: 'Aileron';
+    src: url('/resources/fonts/aileron/Aileron-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/resources/fonts/aileron/Aileron-UltraLight.otf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/resources/fonts/aileron/Aileron-Black.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/resources/fonts/aileron/Aileron-Heavy.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/resources/fonts/aileron/Aileron-Bold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/resources/fonts/aileron/Aileron-SemiBold.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/resources/fonts/aileron/Aileron-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/resources/fonts/aileron/Aileron-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/resources/fonts/aileron/Aileron-Thin.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/resources/fonts/aileron/Aileron-UltraLight.otf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WtcFontResource';
+    src: url('/resources/fonts/ddo/WTC_DDO.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Awesome';
+    src: url('/resources/fonts/FontAwesome/Goals_DDO.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
 .x-body *{
-    font-family: 'Roboto-Regular';
+    font-family: 'Aileron', 'Open Sans';
+    font-weight: 400;
+}
+.applicationenquiry-backcolor{
+    background-color: #fff !important;
 }
 .main-viewport-color{
     .x-panel-body-default{
@@ -432,19 +522,19 @@
     padding-left: 17px !important;
 }
 
-// .filter-btncls.x-btn-default-small {
-//     background-color: #fff !important;
-//     border-radius: 4px !important;
-//     border: none;
-//     height: 33px;
-//     width: 33px;
-//     background-size: 24px !important;
-//     background-position: 5px 5px;
-//     background-image: url(/resources/images/jobs/ic_filter_list_black_24px.svg);
-//     display: inline-block;
-//     background-repeat: no-repeat;
-//     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.01);
-// }
+.filter-btncls.x-btn-default-small {
+    background-color: #fff !important;
+    border-radius: 4px !important;
+    border: none;
+    height: 33px;
+    width: 33px;
+    background-size: 24px !important;
+    background-position: 5px 5px;
+    background-image: url(/resources/images/jobs/ic_filter_list_black_24px.svg) !important;
+    display: inline-block;
+    background-repeat: no-repeat;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.01) !important;
+}
 // .karmascore-search-icon-field.x-btn-default-small:before {
 //     // content: '\0041' !important;
 //     font-size: 90%;
@@ -847,6 +937,7 @@ text-align: center;
 }
 .arrow-cls{
     vertical-align: top;
+    font-style: normal;
 }
 
 .loc-exp{
@@ -1216,3 +1307,100 @@ text-align: center;
     display: none;
 }
 
+
+
+/******grid styling ******/
+.x-grid-row {
+	border-color: #d7d7d7;
+
+    &.x-grid-item-odd {
+        background-color: #222222;
+    }
+
+    &.x-item-selected {
+        background-color: #910091;
+    }
+}
+
+.x-grid-viewoptions {
+    background-color: #000;
+
+	.x-list-item.x-list-item-tpl {
+		color: #aaa;
+	}
+
+    .x-column-options-text {
+        margin: 5px 50px 5px 80px;
+    }
+
+    .x-list-item-dragging {
+		background-color: #000 !important;
+		border-color: #000 !important;
+    }
+
+    .x-list-item.x-item-selected.x-list-item-tpl  {
+        .x-column-options-text {
+            color: #fff;
+        }
+
+        .x-column-options-visibleindicator:after {
+            color: #910091;
+        }
+
+        .x-column-options-sortablehandle:after {
+            color: #fff;
+        }
+
+        .x-column-options-folder:after,
+        .x-column-options-leaf:after {
+            color: #fff;
+        }
+    }
+}
+
+.x-grid-multiselection-column {
+    &.x-grid-multiselection-allselected:after {
+        color: #910091 !important;
+    }
+}
+
+.x-grid-pagingtoolbar {
+    > .x-body {
+        padding: 0 50px;
+    }
+
+    .x-button {
+    	margin: 6px 6px 0;
+    }
+}
+
+.x-grid-pagingtoolbar-currentpage {
+    position: relative;
+    height: 22px;
+
+    span {
+        position: absolute;
+        right: 0;
+        top: 0;
+        line-height: 22px;
+        height: 22px;
+    }
+}
+
+.x-grid-summaryrow {
+    background-color: #505050;
+
+    .x-grid-cell {
+        border-color: #C0C0C0;
+    }
+}
+
+.x-grid-header {
+    background-color: #000;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    padding-left: 5px;
+    font-weight: normal;
+    font-size: 17pt;
+}

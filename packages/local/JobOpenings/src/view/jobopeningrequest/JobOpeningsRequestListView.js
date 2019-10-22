@@ -4,7 +4,7 @@ Ext.define('JobOpenings.view.jobopeningrequest.JobOpeningsRequestListView', {
   requires: [
     'JobOpenings.view.jobopeningrequest.filtertoolbar.JobOpeningsFilterView',
     'JobOpenings.view.jobopeningrequest.filtertoolbar.FilterViewModel',
-    // 'JobsModule.store.jobopenings.JobopeningsActions'
+    // 'JobOpenings.store.jobopenings.JobopeningsActions'
   ],
   cls: 'jobopening-cls noscrollbar',
   reference: 'listview',
@@ -73,6 +73,7 @@ Ext.define('JobOpenings.view.jobopeningrequest.JobOpeningsRequestListView', {
               var actionName = rec.get('action_name');
               if (viewModel.get('editAction') == true && actionName == "Edit") {
                 actions.push('<li>' + rec.get('action_name') + '</li>');
+                
               }
               if (viewModel.get('deleteAction') == true && actionName == "Delete") {
                 if (jobStatus == "Awaiting Approval" || jobStatus == "Drafted") {
@@ -96,7 +97,7 @@ Ext.define('JobOpenings.view.jobopeningrequest.JobOpeningsRequestListView', {
         },
         listRecruiter: function (values) { /* to list out recruiters*/
           var lists = [],
-            jobOpeningsStore = Ext.getStore('jobopenings.JobRecruiter');
+            jobOpeningsStore = Ext.getStore('jobopenings.JobRecruiter') || Ext.create('JobOpenings.store.jobopenings.JobRecruiter');
           if (jobOpeningsStore) {
             jobOpeningsStore.each(function (rec) {
               var str = values.recruiter_id,

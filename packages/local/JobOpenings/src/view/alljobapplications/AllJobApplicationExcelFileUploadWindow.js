@@ -2,7 +2,8 @@ Ext.define('JobOpenings.view.alljobapplications.AllJobApplicationExcelFileUpload
 	extend: 'Ext.window.Window',
 	xtype: 'allJobApplicationexcelfileuploadwindow',
 	requires: [
-		'JobOpenings.view.alljobapplications.AllJobApplicationsExcelFileupload'
+		'JobOpenings.view.alljobapplications.AllJobApplicationsExcelFileupload',
+		// 'JobOpenings.view.alljobapplications.AllJobApplicationsViewModel'
 	],
 	title: 'Upload Excel File',
 	modal: true,
@@ -13,7 +14,7 @@ Ext.define('JobOpenings.view.alljobapplications.AllJobApplicationExcelFileUpload
 	layout: {
 		type: 'fit'
 	},
-	viewModel: 'alljobapplicationsviewmodel',
+	// viewModel: 'alljobapplicationsviewmodel',
 	closeAction: 'hide',
 	reference:'alljobapplicationexcelfileuploadwinref',
 	resizable: false,

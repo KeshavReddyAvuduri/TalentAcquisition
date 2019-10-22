@@ -1,6 +1,6 @@
 
 
-Ext.define('JobsModule.util.KeycloakLoader', {
+Ext.define('JobsModule.view.main.KeycloakLoader', {
     extend: "Ext.util.Observable",
     singleton: true,
     alternateClassName: ['KeycloakLoader'],
@@ -10,7 +10,7 @@ Ext.define('JobsModule.util.KeycloakLoader', {
         
         var me = this,
             keycloak;
-        keycloak = Keycloak('./resources/keycloak.json');
+        keycloak = Keycloak('resources/keycloak.json');
         me.keycloak = keycloak;
     },
 

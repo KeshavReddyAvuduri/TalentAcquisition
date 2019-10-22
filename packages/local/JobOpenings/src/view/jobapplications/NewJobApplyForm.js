@@ -9,7 +9,7 @@ Ext.define('JobOpenings.view.jobapplications.NewJobApplyForm',{
 		padding: 5,
 		labelStyle: 'font-size:16px;'
 	},
-	height:500,
+	height:550,
 	scrollable:true,
 	reference: 'applyForm',
 	layout: {

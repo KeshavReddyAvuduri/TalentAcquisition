@@ -7,7 +7,7 @@ Ext.define('JobsModule.view.main.MainModel', {
     alias: 'viewmodel.mainviewport',
 
     data: {
-        name: 'JobsModule',
+        name: 'Talent Acquisition',
         currentView: null,
         hashTag: null,
         id: null,
