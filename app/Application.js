@@ -18,8 +18,8 @@ Ext.define('JobsModule.Application', {
         'JobOpenings.overrides.data.Connection'
     ],
     stores:[
-        'JobsModule.store.jobopenings.JobopeningsActions',
         'JobsModule.store.Login',
+        'JobsModule.store.jobopenings.JobopeningsActions',
         'JobsModule.store.jobopenings.JobRecruiter',
     ],
     onAppUpdate: function () {

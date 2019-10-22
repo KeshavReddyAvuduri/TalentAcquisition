@@ -2,13 +2,6 @@ Ext.define('JobOpenings.util.Utility', {
     singleton: true,
     alternateClassName: ['Utility'],
 
-    isProfileImage: true,
-
-    isFormDirty: false,
-
-    likeImgAnim: false,
-
-    profileAppeared: null,
 
     todoEdited: false,
 
@@ -17,8 +10,6 @@ Ext.define('JobOpenings.util.Utility', {
     ratingId: 0,
 
     dashboard: false,
-
-    sliderEndRangeValue: null,
 
     toastReusable: null,
 
@@ -84,11 +75,6 @@ Ext.define('JobOpenings.util.Utility', {
     appChangedImage: [],
     isKarmaMaskLoaded : true,
 
-    defaultUserImg:"this.src=`resources/images/profileImageMissing.jpg`",
-    defaultImg:'resources/images/profileImageMissing.jpg',
-    defaultPostImg:"this.src=`resources/images/postNotFound.jpg`",
-    defaultProjectImg:"this.src=`resources/images/project.jpeg`",
-    projectImg:"resources/images/project.jpeg",
     constructor: function(config) {
         var me = this;
         Ext.apply(this, config);

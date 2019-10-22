@@ -3,8 +3,5 @@ Ext.define('JobsModule.model.jobopenings.JobOpeningsDataModel', {
 
 	fields: ['title','recruiter_name', {
 		name:'count'
-		// convert:function(value,rec){
-		// 	return Ext.getStore('jobopenings.JobRecruiter').getCount();
-		// }
 	}]
 });

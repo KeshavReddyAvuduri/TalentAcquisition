@@ -20,17 +20,6 @@ Ext.define('JobsModule.view.main.MainController', {
 	routes: {
 		':makeactivetab': 'makeActiveTab',
 	},
-	myfunction: function (keycloak) {
-		setTimeout(() => {
-			var isTokenExpired = keycloak.isTokenExpired();
-			if (isTokenExpired) {
-				keycloak.updateToken().success(function (res) { }).error(function () {
-					alert('Failed to refresh token');
-				});
-			}
-			this.myfunction(keycloak);
-		}, 120000);
-	},
 
 	/**
 	 * Function to check whether the user is logged in or not using keycloak server.

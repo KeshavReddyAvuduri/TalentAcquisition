@@ -20,30 +20,8 @@ Ext.define('JobOpenings.util.Api', {
             //for extjs ajax request API's
             hostUrl:hostUrl,
             imageUrl : imageUrl,
-            ddonominate: {
-                nomination: '/ddonominate',
-                calulateKarmaScore: '/ddonominate/calculatekarmascore',
-                selfNomination: '/ddonominate/selfnomination',
-                selfcalculatekarmascore: '/ddonominate/selfcalculatekarmascore'
-            },
 
-            todo: {
-                READ: hostUrl + 'task/get',
-                CREATE: hostUrl + 'task/create',
-                UPDATE: hostUrl + 'task/update',
-                DESTROY: hostUrl + 'task/delete',
-                TODODETAILREAD: hostUrl + 'task/getcompleted'
-            },
 
-            karma: {
-                READ: hostUrl + 'karma/getAllkarmascores'
-            },
-
-            feed: {
-                READ: hostUrl + 'feed/get',
-                FEEDS_EDIT_UPLOAD_IMAGES: hostUrl + 'feed/feedsPostedPics',
-                FEEDS_UPLOAD_IMAGES: hostUrl + 'feeduploadimages/feedsPostedPics'
-            },
 
             dashboard: {
                 READ: hostUrl + 'dashboard/employeeavailability/groupedresources'
@@ -98,77 +76,7 @@ Ext.define('JobOpenings.util.Api', {
             //     READ: hostUrl + 'jobApplicants/get'
             // },
 
-            projects: {
-                READ: hostUrl + 'projectNote',
-                CREATE: hostUrl + 'projectNote',
-                UPDATE: hostUrl + 'projectNote',
-                DELETE: hostUrl + 'projectNote',
-                ROLEREAD: hostUrl + 'projectrole',
-                ALLOCEMPRECS: hostUrl + 'projectresources/allocemployees'
-            },
-
-            wallet: {
-                READ: hostUrl + 'wallet/get',
-                CREATE: hostUrl + 'wallet/create',
-                UPDATE: hostUrl + 'wallet/update'
-            },
-
-            karmaicon: {
-                READ: hostUrl + 'karmarating',
-                UPDATE: hostUrl + 'karmarating'
-            },
-
-            karmarule: {
-                CREATE: hostUrl + 'karmarule/create',
-                READ: hostUrl + 'karmarule/get',
-                UPDATE: hostUrl + 'karmarule/update',
-                DELETE: hostUrl + 'karmarule/delete'
-            },
-
-            karmacategory: {
-                CREATE: hostUrl + 'karmacat/create',
-                READ: hostUrl + 'karmacat/get',
-                UPDATE: hostUrl + 'karmacat/update',
-                DELETE: hostUrl + 'karmacat/delete'
-            },
-
-            ddokarma: {
-                CREATE: hostUrl + 'ddokarma',
-                READ: hostUrl + 'ddokarma',
-                UPDATE: hostUrl + 'ddokarma'
-            },
-
-            karmaprorated: {
-                CREATE: hostUrl + 'karmaproratedinstance',
-                READ: hostUrl + 'karmaproratedinstance',
-                UPDATE: hostUrl + 'karmaproratedinstance',
-                DELETE: hostUrl + 'karmaproratedinstance'
-            },
-
-            karmarangeinstance: {
-                CREATE: hostUrl + 'karmarangeinstance',
-                READ: hostUrl + 'karmarangeinstance',
-                UPDATE: hostUrl + 'karmarangeinstance',
-                DELETE: hostUrl + 'karmarangeinstance'
-
-            },
-
-            karmaratinginstance: {
-                CREATE: hostUrl + 'karmaratinginstance',
-                READ: hostUrl + 'karmaratinginstance',
-                UPDATE: hostUrl + 'karmaratinginstance'
-
-            },
-
-            sharablewallet: {
-                READ: hostUrl + 'wallet/sharablewallet'
-            },
-
-            karmaapproval: {
-                READ: hostUrl + 'ddonominate/pendingapproval',
-                ACCEPT: hostUrl + 'ddonominate/approvenomination',
-                REJECT: hostUrl + 'ddonominate/rejectnomination'
-            },
+            
 
             department: {
                 CREATE: hostUrl + 'department',
@@ -189,107 +97,20 @@ Ext.define('JobOpenings.util.Api', {
                 UPDATE: hostUrl + 'designation'
             },
 
-            employeesetup: {
-                CREATE: hostUrl + 'employeesetup',
-                READ: hostUrl + 'employeesetup',
-                UPDATE: hostUrl + 'employeesetup'
-            },
 
             account: {
                 READ: hostUrl + 'account',
                 UPDATE: hostUrl + 'account',
                 URLPATHAPI: hostUrl + 'companylogo/companyLogoUrlPath'
             },
-            redeemgrid: {
-                CREATE: hostUrl + 'redeemhistory',
-                READ: hostUrl + 'redeemhistory/get',
-                UPDATE: hostUrl + 'redeemhistory'
-            },
-            attribute: {
-                READ: hostUrl + 'productattribute',
-                CREATE: hostUrl + 'productattribute',
-                UPDATE: hostUrl + 'productattribute',
-                DESTROY: hostUrl + 'productattribute'
-            },
-            attributevalue: {
-                READ: hostUrl + 'productattributevalues',
-                CREATE: hostUrl + 'productattributevalues',
-                UPDATE: hostUrl + 'productattributevalues',
-                DESTROY: hostUrl + 'productattributevalues'
-            },
-            categoryvalue: {
-                READ: hostUrl + 'productcategory',
-                CREATE: hostUrl + 'productcategory',
-                UPDATE: hostUrl + 'productcategory',
-                DESTROY: hostUrl + 'productcategory'
-            },
-            product: {
-                READ: hostUrl + 'product',
-                CREATE: hostUrl + 'product',
-                UPDATE: hostUrl + 'product',
-                DESTROY: hostUrl + 'product'
-
-            },
-            setproductattributes: {
-                READ: hostUrl + 'setproductattributes',
-                CREATE: hostUrl + 'setproductattributes',
-                UPDATE: hostUrl + 'setproductattributes',
-                DESTROY: hostUrl + 'setproductattributes'
-            },
-            productimg: {
-                READ: hostUrl + 'productimage',
-                CREATE: hostUrl + 'productimage',
-                UPDATE: hostUrl + 'productimage',
-                DESTROY: hostUrl + 'productimage'
-
-            },
+           
             employee: {
                 CREATE: hostUrl + 'employee',
                 READ: hostUrl + 'employee',
                 UPDATE: hostUrl + 'employee'
             },
 
-            work: {
-                CREATE: hostUrl + 'workdetails',
-                READ: hostUrl + 'workdetails',
-                UPDATE: hostUrl + 'workdetails'
-            },
-
-            empsetup: {
-                CREATE: hostUrl + 'employee',
-                READ: hostUrl + 'employeedetail',
-                UPDATE: hostUrl + 'employee'
-            },
-
-            goal: {
-                READ: hostUrl + 'goal',
-                UPDATE: hostUrl + 'goal',
-                CREATE: hostUrl + 'goal'
-            },
-
-            goaltask: {
-                READ: hostUrl + 'goaltask',
-                CREATE: hostUrl + 'goaltask',
-                UPDATE: hostUrl + 'goaltask',
-                DELETE: hostUrl + 'goaltask'
-            },
-
-            allgoals: {
-                READ: hostUrl + 'goal/allgoals'
-            },
-
-            goalnotes: {
-                READ: hostUrl + 'goalnote',
-                CREATE: hostUrl + 'goalnote'
-                //UPDATE: hostUrl + 'goaltask',
-                //DELETE: hostUrl + 'goaltask'
-            },
-            goalstatus: {
-                READ: hostUrl + 'goalstatus'
-            },
-            goalsettings: {
-                READ: hostUrl + 'settings/goalsettings'
-            },
+          
             financialyear: {
                 CREATE: hostUrl + 'financialyear',
                 READ: hostUrl + 'financialyear',
@@ -339,39 +160,10 @@ Ext.define('JobOpenings.util.Api', {
                 READ : hostUrl + 'jobopeningrequest/getJobStatusData',
                 UPDATE : hostUrl + 'jobopeningrequest/updateJobStatus'
             },
-            
-            feedspiestore:{
-                READ : hostUrl + 'getposttypecount/get'
-
-            },
+        
 
 
-            karmabarstore:{
-                READ : hostUrl + 'getposttypecount/getmonthlykarma'
-
-            },
-            karmapiestore:{
-                READ : hostUrl + 'getposttypecount/getyearlykarma'
-
-            },
-            feeds:{
-                READ : hostUrl +'feed/get'
-
-            },
-            groupsAndEmployee:{
-                READ : hostUrl + 'groupMembers/groupsandemployees'
-              
-            },
-            searchfeeds:{
-                READ : hostUrl + 'feed/get'
-
-            },
-            selectedempstore:{
-            //    READ : hostUrl + 'groupmembers/groups',
-             READ : hostUrl + 'groupmembers'
-            
-
-            },
+        
             selectedemptagstore:{
                 READ : hostUrl +  'employeegroups/getTaggedGroupEmployees'
 
@@ -508,10 +300,7 @@ Ext.define('JobOpenings.util.Api', {
                 READ : hostUrl +  'projecttechnologies'
 
             },
-            redeemhistoryitemsgridstore:{
-                READ : hostUrl +  'redeemhistory/items'
-
-            },
+            
             resources:{
                 READ : hostUrl +  'dashboard/employeeavailability/groupedresources'
 

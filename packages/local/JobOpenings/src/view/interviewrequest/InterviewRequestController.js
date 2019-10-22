@@ -155,7 +155,7 @@ Ext.define('JobOpenings.view.interviewrequest.InterviewRequestController', {
     /*submit button functionality*/
     interviewRequestSubmitClick: function(vw, record, item, index, e, eOpts) {
         var xRatingStr = JSON.parse(window.sessionStorage.getRatingStr),
-        sectedText = item.children[0].children[1].children[4].children[0].children[1].outerText.split("\n")[0].trim();
+        sectedText = item.children[0].children[1].children[4].children[0].children[1].outerText.split("\n")[0].trim(),
         ratingId = null;
         xRatingStr.data.forEach(function(item){
             if (sectedText == item.name.trim()) {
