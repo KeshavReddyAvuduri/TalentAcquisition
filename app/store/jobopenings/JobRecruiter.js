@@ -12,8 +12,8 @@ Ext.define('JobsModule.store.jobopenings.JobRecruiter', {
 
     proxy: {
         type: 'ajax',
-        // url:  Api.URL.jobrecruiter.READ,
-        url:'http://192.168.1.16:3400/jobopeningrequest/jobrecruiters',
+        url:  Api.URL.jobrecruiter.READ,
+        // url:'http://192.168.1.16:3400/jobopeningrequest/jobrecruiters',
         reader: {
             type: 'json',
             rootProperty: 'data'

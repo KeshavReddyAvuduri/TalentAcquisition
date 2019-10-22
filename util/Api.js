@@ -12,7 +12,7 @@ Ext.define('JobsModule.util.Api', {
     URL: (function () {
         
         //Service url
-        var  hostUrl = "http://192.168.1.16:3400/";
+        var  hostUrl = "http://192.168.1.135:3400/";
         // To read  images from S3 bucket
         var imageUrl = "https://testingnewnew.s3.amazonaws.com/";      
 

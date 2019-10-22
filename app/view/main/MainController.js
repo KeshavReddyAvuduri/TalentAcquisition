@@ -176,5 +176,3 @@ Ext.define('JobsModule.view.main.MainController', {
 	}
 
 });
-
-// chennakesavareddy.avuduri@walkingtree.tech
